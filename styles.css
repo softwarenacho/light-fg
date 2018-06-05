@@ -1,0 +1,309 @@
+.container-fluid {
+  margin: 10px;
+  padding: 10px;
+  min-height: 97vh;
+  border: 3px solid #cf2e2e;
+  background-color: rgba(82, 40, 40, 0.4);
+}
+
+a {
+  font-family: 'LG-SS';
+  font-size: 24px;
+  cursor: pointer;
+  cursor: hand;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.top-10 {
+  margin-top: 60px;
+}
+
+.img-responsive {
+  margin: 0 auto;
+}
+
+.img-head {
+  width: 222px;
+  margin: 22px auto;
+  z-index: 0;
+}
+
+.img-logo {
+  position: fixed;
+  left: -90px;
+  top: 30%;
+  width: 485px;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+#background-carousel{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+.carousel,
+.carousel-inner {
+  width:100%;
+  height:100%;
+  z-index:0;
+  overflow:hidden;
+}
+.item {
+  width:100%;
+  height:100%;
+  background-position:center center;
+  background-size:cover;
+  z-index:0;
+}
+.link:link {
+    text-decoration: none;
+    color:black;
+}
+
+.link:visited {
+    text-decoration: none;
+    color:black;
+}
+
+.link:hover {
+    text-decoration: none;
+    cursor:pointer;
+    cursor:hand;
+    color:#a23131;
+}
+
+.link:active {
+    text-decoration: none;
+    color:black;
+}
+.menu,
+.menu .btn .fa,
+.menu .btn.trigger .line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.menu {
+  left: -30px;
+  width: 5em;
+  height: 5em;
+}
+
+.menu .btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  opacity: 0;
+  z-index: -10;
+  cursor: pointer;
+  -webkit-transition: opacity 1s, z-index 0.3s, -webkit-transform 1s;
+  transition: opacity 1s, z-index 0.3s, transform 1s;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.menu .btn .fa {
+  font-size: 3em;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.menu .btn:hover .fa { color: rgba(255, 255, 255, 0.7); }
+
+.menu .btn.trigger {
+  width: 485px;
+  height: 485px;
+  left: -53px;
+  top: -160px;
+  background-image: url(https://i.imgur.com/oLcqNOt.png);
+  background-repeat: no-repeat;
+  background-size: 94%;
+  background-position: center;
+  opacity: 0.4;
+  z-index: 100;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.menu .btn.trigger:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.menu.active .rotater:hover {
+  opacity: 0.5;
+}
+
+.menu .btn.trigger:hover .line { background-color: rgba(255, 255, 255, 0.7); }
+
+.menu .btn.trigger:hover .line:before,
+.menu .btn.trigger:hover .line:after { background-color: rgba(255, 255, 255, 0.7); }
+
+.menu .btn.trigger .line {
+  width: 60%;
+  height: 6px;
+  background: #000;
+  border-radius: 6px;
+  -webkit-transition: background-color 0.3s, height 0.3s, top 0.3s;
+  transition: background-color 0.3s, height 0.3s, top 0.3s;
+}
+
+.menu .btn.trigger .line:before,
+.menu .btn.trigger .line:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: #000;
+  border-radius: 6px;
+  -webkit-transition: background-color 0.3s, -webkit-transform 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu .btn.trigger .line:before {
+  top: -12px;
+  -webkit-transform-origin: 15% 100%;
+  -ms-transform-origin: 15% 100%;
+  transform-origin: 15% 100%;
+}
+
+.menu .btn.trigger .line:after {
+  top: 12px;
+  -webkit-transform-origin: 25% 30%;
+  -ms-transform-origin: 25% 30%;
+  transform-origin: 25% 30%;
+}
+
+.menu .rotater {
+  position: relative;
+  top: -31px;
+  left: 320px;
+  width: 150%;
+  height: 150%;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.menu.active .btn-icon {
+  opacity: 1;
+  z-index: 50;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.menu.active .trigger .line {
+  height: 0px;
+  top: 45%;
+}
+
+.menu.active .trigger .line:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 110%;
+}
+
+.menu.active .trigger .line:after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 110%;
+}
+
+.rotater:nth-child(2) {
+  -webkit-transform: rotate(112.5deg);
+  -ms-transform: rotate(112.5deg);
+  transform: rotate(112.5deg);
+}
+
+.menu.active .rotater:nth-child(2) .btn-icon {
+  -webkit-transform: translateX(-10em) rotate(-112.5deg);
+  -ms-transform: translateX(-10em) rotate(-112.5deg);
+  transform: translateX(-10em) rotate(-112.5deg);
+}
+
+.rotater:nth-child(3) {
+  -webkit-transform: rotate(157.5deg);
+  -ms-transform: rotate(157.5deg);
+  transform: rotate(157.5deg);
+}
+
+.menu.active .rotater:nth-child(3) .btn-icon {
+  -webkit-transform: translateX(-10em) rotate(-157.5deg);
+  -ms-transform: translateX(-10em) rotate(-157.5deg);
+  transform: translateX(-10em) rotate(-157.5deg);
+}
+
+.rotater:nth-child(4) {
+  -webkit-transform: rotate(202.5deg);
+  -ms-transform: rotate(202.5deg);
+  transform: rotate(202.5deg);
+}
+
+.menu.active .rotater:nth-child(4) .btn-icon {
+  -webkit-transform: translateX(-10em) rotate(-202.5deg);
+  -ms-transform: translateX(-10em) rotate(-202.5deg);
+  transform: translateX(-10em) rotate(-202.5deg);
+}
+
+.rotater:nth-child(5) {
+  -webkit-transform: rotate(247.5deg);
+  -ms-transform: rotate(247.5deg);
+  transform: rotate(247.5deg);
+}
+
+.menu.active .rotater:nth-child(5) .btn-icon {
+  -webkit-transform: translateX(-10em) rotate(-247.5deg);
+  -ms-transform: translateX(-10em) rotate(-247.5deg);
+  transform: translateX(-10em) rotate(-247.5deg);
+}
+
+.lgnd:hover {
+  animation: shake 0.82s cubic-bezier(.18,.03,.09,.5) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+* {
+  background-color: rgba(63, 127, 191, 0.5) !important;
+  outline: solid 1px rgba(25, 51, 76, 0.5) !important;
+}

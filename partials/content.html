@@ -1,0 +1,15 @@
+<div id="background-carousel">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div ng-repeat="key in carousel"
+           class="item" style="background-image: url(assets/images/carousel/{{key}}.jpg"></div>
+    </div>
+  </div>
+</div>
+
+<div class="row" style="margin-top: 100vh;">
+  <div ng-include="'partials/about.html'"></div>
+  <div ng-include="'partials/releases.html'"></div>
+</div>
+
+<div style="height: 1000px;"></div>

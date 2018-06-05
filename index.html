@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="futureGame">
+<head>
+  <title>Future Game</title>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body ng-controller="landingCtrl">
+  <div class="container-fluid">
+    <div ng-include="'partials/nav.html'"></div>
+    <div ng-include="'partials/menu.html'"></div>
+    <div ng-include="'partials/content.html'"></div>
+  </div>
+</body>
+</html>
